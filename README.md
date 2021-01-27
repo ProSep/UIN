@@ -1,2 +1,2 @@
 # UIN
-Utvikling av interaktive nettsteder
+Johan B. Reitan, Utvikling av interaktive nettsteder
