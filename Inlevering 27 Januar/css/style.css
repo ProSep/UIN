@@ -1,0 +1,177 @@
+* {
+  font-family: sans-serif;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:focus{
+  border-style: solid;
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+ol li a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin-right: 6vw;
+}
+
+ol li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 500px 500px auto;
+  grid-row: auto auto;
+  grid-template-areas:
+  "nav nav nav nav"
+  ". main main .";
+}
+
+nav {
+  background-color: white;
+  grid-area: nav;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+ol {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: rgb(255, 255, 255);
+  padding: 0px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+}
+
+.para {
+  background-color: white;
+  text-align: left;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 100px 0px;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.listBox {
+  text-align: left;
+  background-color: white;
+  margin: 2%;
+  padding: 10px;
+  border-radius: 10px;
+  flex: 0 0 280px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+section {
+  padding: 0px;
+}
+
+.TextboxSmol {
+  width: 50%;
+  padding: 10px;
+}
+
+.Textboxbog {
+  width: 100%;
+  resize: none;
+}
+
+button {
+  border: 0px;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: rgb(82, 177, 154);
+  float: right;
+}
+
+.buttonBIG {
+  font-size: 35px;
+  padding: 8px 40px 8px 40px;
+}
+
+button:hover {
+  background-color: rgb(0, 149, 145);
+  color: black;
+}
+
+
+@media only screen and (max-width: 1220px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto 95% auto;
+    grid-row: auto auto;
+    grid-template-areas:
+    "nav nav nav"
+    ". main .";
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  ol li a {
+    flex-direction: column;
+  }
+
+  ol {
+    flex-direction: column;
+  }
+
+  ol li a {
+    padding: 30px 30px;
+    margin-right: 0;
+  }
+}
