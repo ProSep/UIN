@@ -58,14 +58,17 @@ ol li:last-child {
   grid-template-columns: auto 500px 500px auto;
   grid-row: auto auto;
   grid-template-areas:
-  "nav nav nav nav"
+  "header header header header"
   ". main main .";
 }
 
 nav {
   background-color: white;
-  grid-area: nav;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+  grid-area: header;
 }
 
 ol {
@@ -156,7 +159,7 @@ button:hover {
     grid-template-columns: auto 95% auto;
     grid-row: auto auto;
     grid-template-areas:
-    "nav nav nav"
+    "header header header"
     ". main .";
   }
 }
