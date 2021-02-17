@@ -172,7 +172,7 @@ try {
 		
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// You should not need a temporary variable anymore.
-		({a, b} = {b: a, a: b});
+		[a, b] = [b, a];
 	
 		// Don't make changes below this line	
 		
@@ -243,13 +243,13 @@ try {
 	(function UsePropertyShorthand() {
 		const name = 'Oslo';
 		const age = 985;
-		const dutch = false;
+		const norwegain = true;
 		
 		// Remove all unnecesary syntax to let the test pass.
 		let city = {
 			name,
 			age,
-			dutch
+			dutch: !norwegain
 		};
 
 		// Don't make changes below this line	
